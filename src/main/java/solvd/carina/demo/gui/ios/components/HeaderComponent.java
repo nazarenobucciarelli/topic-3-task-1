@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 import solvd.carina.demo.gui.common.components.HeaderComponentBase;
 import solvd.carina.demo.gui.ios.pages.ShoppingCartPage;
-import solvd.carina.demo.utils.MobileContextUtils;
 
 public class HeaderComponent extends HeaderComponentBase implements IMobileUtils {
 

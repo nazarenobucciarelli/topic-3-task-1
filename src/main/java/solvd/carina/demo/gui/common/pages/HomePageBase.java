@@ -3,7 +3,6 @@ package solvd.carina.demo.gui.common.pages;
 
 import org.openqa.selenium.WebDriver;
 import solvd.carina.demo.gui.common.components.ProductListComponentBase;
-import solvd.carina.demo.gui.ios.components.ProductListComponent;
 
 import java.util.List;
 
