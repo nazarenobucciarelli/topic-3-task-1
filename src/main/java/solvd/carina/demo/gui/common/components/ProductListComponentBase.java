@@ -11,8 +11,10 @@ public abstract class ProductListComponentBase extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public abstract ExtendedWebElement getProductName();
+    public abstract String getProductName();
 
     public abstract void clickAddToCartButton();
+
+    public abstract Float getProductPrice();
 
 }

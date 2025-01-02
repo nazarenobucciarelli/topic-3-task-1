@@ -12,4 +12,6 @@ public abstract class ProductCartComponentBase extends AbstractUIObject {
 
     public abstract String getProductName();
 
+    public abstract void clickOnRemoveButton();
+
 }

@@ -11,6 +11,9 @@ public class ProductCartComponent extends ProductCartComponentBase {
     @FindBy(css = "a div.inventory_item_name")
     private ExtendedWebElement productName;
 
+    @FindBy(xpath = "//button[contains(@name,\"remove\")]")
+    private ExtendedWebElement removeButton;
+
     public ProductCartComponent(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
@@ -19,4 +22,10 @@ public class ProductCartComponent extends ProductCartComponentBase {
     public String getProductName() {
         return productName.getText();
     }
+
+    @Override
+    public void clickOnRemoveButton() {
+        removeButton.click();
+    }
+
 }

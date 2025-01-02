@@ -11,7 +11,5 @@ public abstract class HeaderComponentBase extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public abstract void clickFilterMenu();
-
     public abstract ShoppingCartPageBase clickShoppingCart();
 }

@@ -6,6 +6,7 @@ import com.zebrunner.carina.webdriver.decorator.PageOpeningStrategy;
 import com.zebrunner.carina.webdriver.locator.ExtendedFindBy;
 import org.openqa.selenium.WebDriver;
 import solvd.carina.demo.gui.common.pages.SignInPageBase;
+import solvd.carina.demo.utils.MobileContextUtils;
 
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = SignInPageBase.class)
 public class SignInPage extends SignInPageBase {
@@ -43,7 +44,10 @@ public class SignInPage extends SignInPageBase {
     @Override
     public HomePage clickSignInButton() {
         loginButton.click();
-        return new HomePage(driver);
+        if (!loginButton.isVisible()) {
+            return new HomePage(driver);
+        }
+        return null;
     }
 
     @Override
